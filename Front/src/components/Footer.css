@@ -1,0 +1,48 @@
+.footer {  
+    display: flex; /* Usar flexbox para manejar el layout */  
+    justify-content: space-between; /* Espacio entre columnas */  
+    align-items: flex-start; /* Alinear elementos en la parte superior */  
+    background-color: #b0c4de; /* Color de fondo del footer */  
+    padding: 20px;  
+    color: black;  
+}  
+
+.contact-info {  
+    display: flex; /* Alinear las columnas horizontalmente */  
+    width: 100%; /* Forzar a ocupar todo el ancho */  
+}  
+
+.left-column {  
+    display: flex;  
+    flex-direction: column; /* Colocar los elementos verticalmente */  
+    justify-content: flex-start; /* Alinear al inicio */  
+    flex: 1; /* Permitir que ocupe el espacio restante */  
+}  
+
+.right-column {  
+    display: flex;  
+    flex-direction: column; /* Colocar los elementos verticalmente */  
+    justify-content: flex-start; /* Alinear al inicio */  
+    align-items: flex-end; /* Alinear al final (derecha) */  
+    flex-shrink: 0; /* Evitar que se reduzca */  
+}  
+
+.social-icons {  
+    display: flex;  
+    margin-bottom: 10px; /* Espacio debajo de los iconos */  
+}  
+
+.social-icons img {  
+    height: 30px; /* Tamaño de los iconos */  
+    margin: 0 10px; /* Espacio horizontal entre iconos */  
+}  
+
+.phone img {  
+    height: 20px; /* Tamaño del icono de teléfono */  
+    margin-right: 5px; /* Espacio a la derecha del icono */  
+}  
+
+.right-column p {  
+    margin: 0; /* Eliminar márgenes alrededor del texto */  
+    text-align: right; /* Alinear texto a la derecha */ 
+}

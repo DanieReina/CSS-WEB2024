@@ -1,0 +1,56 @@
+.hero {  
+    position: relative; /* Necesario para posicionar botones */  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin: 20px 0; /* Espacio superior e inferior */  
+}  
+
+.hero img {  
+    width: 90%; /* Ajusta este valor según necesites, por ejemplo, 80% del contenedor */  
+    max-width: 400px; /* Establece un tamaño máximo para la imagen */  
+    height: auto; /* Mantener la proporción de la imagen */  
+    border-radius: 5px; 
+}  
+
+.carousel-button {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */  
+    border: none;  
+    padding: 10px;  
+    cursor: pointer;  
+    font-size: 24px; /* Tamaño del texto del botón */  
+    z-index: 1000; /* Asegurarse de que esté por encima de la imagen */  
+}  
+
+.carousel-button:first-of-type {  
+    left: 10px; /* Botón de la izquierda */  
+}  
+
+.carousel-button:last-of-type {  
+    right: 10px; /* Botón de la derecha */  
+}  
+
+.services {  
+    display: flex;  
+    justify-content: space-around; /* Espacio entre los íconos */  
+    margin: 20px 0; /* Espacio superior e inferior */  
+}  
+
+.service-item {  
+    display: flex;  
+    flex-direction: column; /* Colocar icono y texto en columna */  
+    align-items: center; /* Centrar el contenido */  
+    text-align: center; /* Centrar el texto */  
+}  
+
+.service-item img {  
+    height: 60px; /* Ajustar tamaño de los iconos */  
+    margin-bottom: 10px; /* Espacio debajo del icono */  
+}  
+
+.footer {  
+    margin-top: auto; /* Asegurar que el footer esté al final */  
+}

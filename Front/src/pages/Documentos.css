@@ -1,0 +1,54 @@
+body {   
+    margin: 0;   
+}  
+
+.documentos-container {  
+    position: relative; 
+    text-align: center;  
+    padding: 65px; 
+    color: black; 
+}  
+
+.documentos-container::before {  
+    content: ""; /* Necesario para que el pseudoelemento funcione */  
+    position: absolute;
+    top: 0;   
+    left: 0;   
+    right: 0;   
+    bottom: 0;   
+    background-image: url('/images/documentos.jpg'); 
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;  
+    opacity: 0.5; 
+    z-index: 1; 
+}  
+
+h1, .documentos-items {  
+    position: relative; 
+    z-index: 2; 
+}  
+
+.documentos-items {  
+    display: flex; /* Usar flexbox para alinear horizontalmente */  
+    justify-content: space-between; /* Espacio entre los íconos */  
+    align-items: center; /* Alinear verticalmente al centro */  
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */  
+    margin-top: 20px; /* Espacio encima del contenedor de ítems, ajusta según sea necesario */  
+} 
+
+.document-item {  
+    display: flex;  
+    flex-direction: column; /* Colocar icono y texto en columna */  
+    align-items: center; /* Centrar el contenido */  
+    text-align: center; /* Centrar el texto */  
+    margin: 10px; /* Espacio alrededor de cada ítem */  
+    flex: 1; /* Permite que los elementos crezcan y se distribuyan uniformemente */  
+    min-width: 150px; /* Ajusta el ancho mínimo de cada ítem */
+}  
+
+.document-item img {  
+    height: 80px; /* Ajustar tamaño de los iconos */  
+    margin-bottom: 10px; /* Espacio debajo del icono */  
+    
+}

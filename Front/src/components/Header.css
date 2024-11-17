@@ -1,0 +1,55 @@
+.header {  
+    background-color: #003366; /* Color de fondo del header */  
+    padding: 10px 0; /* Espacio vertical del header */  
+}  
+
+.header-content {  
+    display: flex;  
+    justify-content: space-between; /* Colocar logo y perfil en los extremos */  
+    align-items: center; /* Centra verticalmente el contenido */  
+    padding: 0 20px; /* Añade espaciado horizontal */  
+}  
+
+.logo img {  
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */  
+}  
+
+.profile-icon img {  
+    height: 50px; /* Ajusta el tamaño del icono de usuario */  
+}  
+
+.title {  
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible */  
+    text-align: center; /* Centra el título */  
+    font-size: 2em; /* Tamaño del texto para el título */  
+    margin: 0; /* Sin margen alrededor del título */  
+    color: white; /* Color del título */  
+    font-weight: bold;  
+}  
+
+.nav {  
+    width: 100%; /* Asegura que la navegación ocupe todo el ancho */  
+    background-color: #b0c4de; /* Color de fondo de la navegación */  
+}  
+
+.nav ul {  
+    display: flex;  
+    justify-content: center; /* Centrar la navegación */  
+    list-style: none;  
+    margin: 0;  
+    padding: 10px 0; /* Espacio vertical */  
+}  
+
+.nav li {  
+    margin: 0 15px; /* Espacio horizontal entre los elementos */  
+}  
+
+.nav a {  
+    color: #003366; /* Color del texto de los enlaces */  
+    text-decoration: none;  
+    font-weight: 600; /* Peso de la fuente */  
+}  
+
+.nav a:hover {  
+    text-decoration: underline; /* Subrayar al pasar el mouse */  
+}
